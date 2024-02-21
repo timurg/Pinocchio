@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9708EA72-8E6F-429F-BD30-490F47AB8986}") = "Pinocchio.Domain", "Pinocchio.Domain\Pinocchio.Domain.csproj", "{50153E85-0303-47BD-A8EA-370777828092}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pinocchio.Infrastructure", "Pinocchio.Infrastructure\Pinocchio.Infrastructure.csproj", "{287EF37C-2ECF-46DE-8281-B40079303283}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pinocchio.Infrastructure.EntityFramework", "Pinocchio.Infrastructure.EntityFramework\Pinocchio.Infrastructure.EntityFramework.csproj", "{59623C57-0552-4D3A-8B5E-ED76E89F3565}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pinocchio.Infrastructure.EntityFramework.Sqlite", "Pinocchio.Infrastructure.EntityFramework.Sqlite\Pinocchio.Infrastructure.EntityFramework.Sqlite.csproj", "{B62CA3B0-47B2-4B48-961D-66B8ECC3C6C8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{287EF37C-2ECF-46DE-8281-B40079303283}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{287EF37C-2ECF-46DE-8281-B40079303283}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{287EF37C-2ECF-46DE-8281-B40079303283}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{287EF37C-2ECF-46DE-8281-B40079303283}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59623C57-0552-4D3A-8B5E-ED76E89F3565}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59623C57-0552-4D3A-8B5E-ED76E89F3565}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59623C57-0552-4D3A-8B5E-ED76E89F3565}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59623C57-0552-4D3A-8B5E-ED76E89F3565}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B62CA3B0-47B2-4B48-961D-66B8ECC3C6C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B62CA3B0-47B2-4B48-961D-66B8ECC3C6C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B62CA3B0-47B2-4B48-961D-66B8ECC3C6C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B62CA3B0-47B2-4B48-961D-66B8ECC3C6C8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
