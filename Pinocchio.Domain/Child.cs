@@ -9,4 +9,8 @@ public class Child{
     public Guid Id {get; set;}
     
     public required string ChildName {get; set;}
+
+    public Parent? Parent {get;set;}
+
+    public bool Active {get;set;}
 }
