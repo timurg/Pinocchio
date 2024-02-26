@@ -13,14 +13,16 @@ public class BussinesLogicTest
     [SetUp]
     public void Setup()
     {
+        TestContext.Out.WriteLine("setup");
         var contextFactory = new SqlitePinocchioContextFactory();
-        this.context = contextFactory.CreateDbContext([]);
+        this.context = contextFactory.CreateDbContext([], TestContext.Out.WriteLine);
         unitOfWork = new UnitOfWork(this.context);
     }
 
     [TearDown]
     public void Cleanup()
     {
+        TestContext.Out.WriteLine("Cleanup");
         unitOfWork.Commit();
         unitOfWork.Dispose();
 
@@ -28,11 +30,12 @@ public class BussinesLogicTest
         context = null;
     }
     [Test]
-    public void Test1()
+    public void TestGetChildStates()
     {
         var bo = new ChildStateBussinesObject(unitOfWork);
-        var result = bo.GetChildStates(DateOnly.FromDateTime(DateTime.Now));
-
-        Assert.Pass();
+        Assert.DoesNotThrow(delegate {
+            var result = bo.GetChildStates(DateOnly.FromDateTime(DateTime.Now));
+            throw new ApplicationException("Ny Zina, ny ep twoyou mat'");
+        } );
     }
 }

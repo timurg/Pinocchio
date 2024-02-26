@@ -4,9 +4,9 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
+    <UserSecretsId>a8a36c32-0773-4ea8-a2a5-fae0b57bf43c</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,16 +14,24 @@
     <PackageReference Include="NUnit3TestAdapter" Version="4.5.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />
     <PackageReference Include="NUnit.Analyzers" Version="4.0.1">
-        <PrivateAssets>all</PrivateAssets>
-        <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
     <PackageReference Include="coverlet.collector" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="8.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Pinocchio.BussinesLogic\Pinocchio.BussinesLogic.csproj" />
     <ProjectReference Include="..\Pinocchio.Infrastructure.EntityFramework.Sqlite\Pinocchio.Infrastructure.EntityFramework.Sqlite.csproj" />
     <ProjectReference Include="..\Pinocchio.Domain\Pinocchio.Domain.csproj" />
+    <ProjectReference Include="..\Pinocchio.Infrastructure\Pinocchio.Infrastructure.csproj" />
+    <ProjectReference Include="..\Pinocchio.Infrastructure.EntityFramework\Pinocchio.Infrastructure.EntityFramework.csproj" />
   </ItemGroup>
 
 </Project>
