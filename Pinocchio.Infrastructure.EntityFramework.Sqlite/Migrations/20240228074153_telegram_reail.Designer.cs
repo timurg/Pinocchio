@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Pinocchio.Infrastructure.EntityFramework.Sqlite;
 
@@ -10,9 +11,11 @@ using Pinocchio.Infrastructure.EntityFramework.Sqlite;
 namespace Pinocchio.Infrastructure.EntityFramework.Sqlite.Migrations
 {
     [DbContext(typeof(SqlitePinocchioDataContext))]
-    partial class SqlitePinocchioDataContextModelSnapshot : ModelSnapshot
+    [Migration("20240228074153_telegram_reail")]
+    partial class telegram_reail
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.2");
@@ -29,8 +32,8 @@ namespace Pinocchio.Infrastructure.EntityFramework.Sqlite.Migrations
                     b.Property<string>("ChildName")
                         .HasColumnType("TEXT");
 
-                    b.Property<long?>("ParentChatId")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("ParentChatId")
+                        .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 
@@ -63,11 +66,7 @@ namespace Pinocchio.Infrastructure.EntityFramework.Sqlite.Migrations
 
             modelBuilder.Entity("Pinocchio.Domain.Parent", b =>
                 {
-                    b.Property<long>("ChatId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<DateTimeOffset?>("LastActivityDateTime")
+                    b.Property<string>("ChatId")
                         .HasColumnType("TEXT");
 
                     b.Property<int>("TelegramState")

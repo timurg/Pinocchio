@@ -32,10 +32,11 @@ public class BussinesLogicTest
     [Test]
     public void TestGetChildStates()
     {
+        TestContext.Out.WriteLine("TestGetChildStates");
         var bo = new ChildStateBussinesObject(unitOfWork);
         Assert.DoesNotThrow(delegate {
             var result = bo.GetChildStates(DateOnly.FromDateTime(DateTime.Now));
-            throw new ApplicationException("Ny Zina, ny ep twoyou mat'");
+            //throw new ApplicationException("Ny Zina, ny ep twoyou mat'");
         } );
     }
 }

@@ -26,11 +26,9 @@ public class ChildStateBussinesObject
     public ISet<DateChildState> GetChildStates(DateOnly date)
     {
        // throw new ApplicationException("Ny Zina, ny ep twoyou mat'");
-        var result = new HashSet<DateChildState>();
-        /* var groupQuerry = */
-         var s = from b in unitOfWork.ChildRepository.GetQuery()
+        var result = (from b in unitOfWork.ChildRepository.GetQuery()
               from p in unitOfWork.DateChildStateRepository.GetQuery().DefaultIfEmpty()
-              select new { b, p };
+              select p).ToHashSet();
         return result;
     }
 }

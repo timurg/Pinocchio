@@ -17,7 +17,7 @@ public class SqlitePinocchioContextFactory : IDesignTimeDbContextFactory<SqliteP
             .AddUserSecrets<SqlitePinocchioDataContext>().Build();
             connectionString = configuration.GetConnectionString("pinocchio") ?? throw new ApplicationException("Connection string not defined");
         }
-        return new SqlitePinocchioDataContext(connectionString);
+        return new SqlitePinocchioDataContext(connectionString, log);
     }
 
     public SqlitePinocchioDataContext CreateDbContext(string[] args)

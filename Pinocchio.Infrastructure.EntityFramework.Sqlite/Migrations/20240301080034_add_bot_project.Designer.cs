@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Pinocchio.Infrastructure.EntityFramework.Sqlite;
 
@@ -10,9 +11,11 @@ using Pinocchio.Infrastructure.EntityFramework.Sqlite;
 namespace Pinocchio.Infrastructure.EntityFramework.Sqlite.Migrations
 {
     [DbContext(typeof(SqlitePinocchioDataContext))]
-    partial class SqlitePinocchioDataContextModelSnapshot : ModelSnapshot
+    [Migration("20240301080034_add_bot_project")]
+    partial class add_bot_project
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.2");

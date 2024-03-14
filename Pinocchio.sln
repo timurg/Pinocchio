@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pinocchio.BussinesLogic", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pinocchio.Test", "Pinocchio.Test\Pinocchio.Test.csproj", "{7B54EBBE-D539-4A77-BC7A-324BE752E9E3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pinocchio.ConsoleTest", "Pinocchio.ConsoleTest\Pinocchio.ConsoleTest.csproj", "{3D4A7906-4B5C-4D31-82A1-73DA0BB4193B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pinocchio.Bot", "Pinocchio.Bot\Pinocchio.Bot.csproj", "{9D397F7B-5E26-4795-AAB8-70264D6B3E07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +48,13 @@ Global
 		{7B54EBBE-D539-4A77-BC7A-324BE752E9E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B54EBBE-D539-4A77-BC7A-324BE752E9E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B54EBBE-D539-4A77-BC7A-324BE752E9E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D4A7906-4B5C-4D31-82A1-73DA0BB4193B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D4A7906-4B5C-4D31-82A1-73DA0BB4193B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D4A7906-4B5C-4D31-82A1-73DA0BB4193B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D4A7906-4B5C-4D31-82A1-73DA0BB4193B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D397F7B-5E26-4795-AAB8-70264D6B3E07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D397F7B-5E26-4795-AAB8-70264D6B3E07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D397F7B-5E26-4795-AAB8-70264D6B3E07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D397F7B-5E26-4795-AAB8-70264D6B3E07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

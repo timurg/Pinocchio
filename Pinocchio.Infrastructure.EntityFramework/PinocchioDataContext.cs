@@ -10,7 +10,7 @@ public class PinocchioDataContext : DbContext
     public Log? LogMessage {get; protected set;}
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        LogMessage("!");
+        //LogMessage("!");
         modelBuilder.Entity<Child>().ToTable("Children");
         modelBuilder.Entity<Parent>().HasMany( p => p.Children).WithOne(c => c.Parent);
         modelBuilder.Entity<Parent>().ToTable("Parents");

@@ -19,7 +19,9 @@ public class SqlitePinocchioDataContext : PinocchioDataContext
     {
         optionsBuilder.UseSqlite(connectionString);
         if (LogMessage != null){
-            optionsBuilder.LogTo(s => LogMessage(s));
+            optionsBuilder.LogTo(s => LogMessage(s))
+            .EnableDetailedErrors(true)
+                          .EnableSensitiveDataLogging(true);
         }
         // optionsBuilder.LogTo(System.Console.WriteLine);
     }

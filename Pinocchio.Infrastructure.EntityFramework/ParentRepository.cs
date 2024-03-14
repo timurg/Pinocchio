@@ -16,7 +16,7 @@ public class ParentRepository : IParentRepository
         context.Set<Parent>().Remove(parent);
     }
 
-    public Parent? Get(string ChatId)
+    public Parent? Get(long ChatId)
     {
         if (context.Set<Parent>().Local.Any(e => e.ChatId == ChatId))
         {
