@@ -19,8 +19,10 @@ var botClient = new TelegramBotClient(botToken: configuration["bot:id"] ?? throw
 
 var me = botClient.GetMe();
 
-var namedCommands = new BlockingCollection<NamedCommand>();
-namedCommands.Add(new StartCommand(botClient));
+var namedCommands = new BlockingCollection<NamedCommand>
+{
+    new StartCommand(botClient)
+};
 
 var contextFactory = new SqlitePinocchioContextFactory();
 var context = contextFactory.CreateDbContext([]);
