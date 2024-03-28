@@ -56,5 +56,7 @@ Global
 		{9D397F7B-5E26-4795-AAB8-70264D6B3E07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D397F7B-5E26-4795-AAB8-70264D6B3E07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D397F7B-5E26-4795-AAB8-70264D6B3E07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50153E85-0303-47BD-A8EA-370777828092}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50153E85-0303-47BD-A8EA-370777828092}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 EndGlobal
